@@ -1,0 +1,20 @@
+<mat-toolbar>
+    <span>T2 Jean Yaya</span>
+    <!-- &nbsp genera un pequeño espacio-->
+    &nbsp;&nbsp;
+    <button mat-button (click)="irPregunta2()" >Pregunta2</button>
+    &nbsp;&nbsp;
+    <button mat-button (click)="irPregunta3()" >Pregunta3</button>
+    &nbsp;&nbsp;
+    <button mat-button (click)="irPregunta4()" >Pregunta4</button>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button (click)="salir()" class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+
+
+<hr>
+
+<router-outlet> </router-outlet> 
