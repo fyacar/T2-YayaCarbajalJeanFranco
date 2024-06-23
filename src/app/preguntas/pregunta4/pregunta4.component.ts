@@ -11,6 +11,25 @@ import { CommonModule } from '@angular/common';
 })
 export class Pregunta4Component {
 
-  vehiculos: string[] = ["Camión", "Autobús", "Turismo","Motocicleta"];
+  resultado: string = "";
+
+  vehiculos: string[] = ["Camion", "Autobus", "Turismo","Motocicleta"];
+
+  testAlcoholemia(vehiculo: HTMLInputElement, tasa: HTMLInputElement){
+    let vehicul = vehiculo.value
+    let tas = parseFloat(tasa.value)
+    if (vehicul === "Camion" || vehicul ==="Autobus") {
+      if(tas >0.3){
+        this.resultado = "Positivo"
+      }    
+  }  else if (vehicul === "Turismo" || vehicul ==="Motocicleta") {
+    if(tas >0.5){
+      this.resultado = "Positivo"
+    }
+} else {
+  this.resultado = "Nevativo"
+} 
+
+}
 
 }
