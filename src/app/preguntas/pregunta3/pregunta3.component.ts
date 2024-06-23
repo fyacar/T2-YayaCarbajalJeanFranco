@@ -16,7 +16,7 @@ export class Pregunta3Component {
   costoTotal(cantidadCursos: HTMLInputElement){
     const cantCursos = parseInt(cantidadCursos.value)
     if (cantCursos > 5) {
-      this.costoFinal = 520*0.1
+      this.costoFinal = 520*0.9
   } else {
       this.costoFinal = 520;
   } 
